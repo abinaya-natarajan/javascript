@@ -1,5 +1,6 @@
 <?php
 
-include_multiple("index.html", "index.js");
+include("index.html");
+include("index.js");
 
 ?>
