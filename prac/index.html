@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code prac</title>
+</head>
+<body>
+
+    <div id="mainContainer" onclick="mainContainer()" style="border: 5px solid maroon; padding: 50px;">
+        <div id="wrapper" onclick="wrapper()" style="border: 5px solid greenyellow; padding: 50px;">
+            <div id="content" onclick="content()" style="border: 5px solid purple; padding: 50px;">
+                <p id="para" onclick="para(event)" style="border: 5px solid blue; padding: 50px;">
+                  Click Me  
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <script>
+        function mainContainer() {
+            alert('Main container');
+        }
+
+        function wrapper() {
+            alert('wrapper');
+        }
+
+        function content() {
+            alert('content');
+        }
+
+        function para(event) {
+            event.stopImmediatePropagation();
+            alert('para');
+            
+        }
+    </script>
+
+</body>
+</html>
